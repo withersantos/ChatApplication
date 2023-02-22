@@ -1,0 +1,235 @@
+/*reset css*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* fim do reset*/
+
+.paginainicial {
+  /* border: 2px solid gray; */
+  width: 1440px;
+  height: 605px;
+}
+
+.blocomenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  /* border: 1px solid red; */
+  width: 1296px;
+  height: 42px;
+  margin-top: 36px;
+  margin-left:72px;
+  margin-right: 72px;
+  
+
+}
+
+a{
+  text-decoration: none;
+}
+
+.logo {
+  display: flex;
+  font-size:16px ;
+  /* border: 1px solid blue; */
+  width: 178px;
+  height: 24px;
+	align-items: center;
+  margin-right: 247px;
+}
+.foto-logo{
+  justify-content: flex-start;
+  /* border: 1px solid black; */
+}
+.nome-logo {
+  /* border: 1px solid green; */
+  margin-left:6px;
+  font-size:16px ;
+  font-weight: bold;
+}
+.menu {
+  display: flex;
+  font-size: 16px;
+	justify-content: space-between;
+	text-align: center;
+	/* border: 1px solid rgb(0, 255, 55); */
+	width: 385px;
+	height: 19px;
+  margin-right: 247px;
+}
+.menu a, .login a {
+  color: black;
+} 
+
+.bloco-login {
+  /* border: 1px solid purple; */
+  display: flex;
+	align-items: center;
+	justify-content: center;
+  width: 257px;
+  height: 42px;
+  justify-content: flex-start;
+}
+.login {
+  margin-right: 41px;
+  /* border: 1px solid forestgreen; */
+  width: 43px;
+  height: 19px;
+  margin-right: 41px;
+}
+.btn-menu {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  width: 173px;
+  height: 42px;
+  background-color: blue;
+}
+
+.container-conteudo {
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid rgb(22, 147, 197); */
+  width: 1314px;
+  height: 441px;
+  margin-left: 63px;
+  margin-right: 63px;
+  margin-top: 50px;
+}
+
+.lado-esquerdo {
+  display: flex;
+  flex-direction: column;
+  margin-left: 36.5px;
+  margin-top: 11.2px;
+  margin-bottom: 11.2;
+  /* border: 1px solid red; */
+  width: 493px;
+  height: 418,6px;
+}
+.texto-titulo-esquerdo {
+  
+  /* border: 1px solid purple; */
+  width: 493px;
+  height: 147px;
+  color: #131313;
+  font-size: 40px;
+  font-weight: bolder; 
+}
+.texto-baixo-titulo {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #12141D;
+  /* border: 1px solid green; */
+  width: 450px;
+  height: 64px;
+}
+
+.btn-texto {
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  width: 173px;
+  height: 42px;
+  background-color: blue;
+  margin-top: 30px;
+}
+
+.btn-blue {
+  font-size: 16px;
+  border: none;
+  color: white;
+  background-color: blue;
+
+}
+.bloco-rating {
+  display: flex;
+  align-items: center;
+  margin-top: 49px;
+  /* border: 1px solid purple; */
+  width: 342,21px;
+  height: 64,6px;
+}
+.rating-image {
+  margin-right: 33px;
+  /* border: 1px solid green; */
+  width: 95px;
+  height: 45px;  
+}
+.meio-rating {
+  
+  margin-right: 33px;
+  font-size: 16px;
+  text-align: left;
+  /* border:1px solid red; */
+  width: 133,1px;
+  height: 64,6px;
+
+}
+.direita-rating {
+  
+  font-size: 16px;
+  text-align: left;
+  /* border: 1px solid blue; */
+  width: 48,1px;
+  height: 64,31px;
+
+}
+
+.pontos {
+  
+  /* border: 1px solid red; */
+  width: 49px;
+  height: 32px;
+}
+
+.lado-direito {
+  margin-right:36.5px;
+  /* border: 1px solid green; */
+  width: 445px;
+  height: 489px;
+}
