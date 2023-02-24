@@ -9,43 +9,69 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+  display: block;
 }
+
 body {
-	line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+  content: '';
+  content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 
 /* fim do reset*/
+@font-face {
+  font-family: 'ClashDisplay-Regular';
+  src: url('../fonts/ClashDisplay-Regular.woff2') format('woff2'),
+    url('../fonts/ClashDisplay-Regular.woff') format('woff'),
+    url('../fonts/ClashDisplay-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {
+
+
+  align-items: center;
+  margin: 0 calc((100vw - 1440px) /2);
+
+
+}
 
 .paginainicial {
   /* border: 2px solid gray; */
@@ -62,58 +88,63 @@ table {
   width: 1296px;
   height: 42px;
   margin-top: 36px;
-  margin-left:72px;
+  margin-left: 72px;
   margin-right: 72px;
-  
+
 
 }
 
-a{
+a {
   text-decoration: none;
 }
 
 .logo {
   display: flex;
-  font-size:16px ;
+  font-size: 16px;
   /* border: 1px solid blue; */
   width: 178px;
   height: 24px;
-	align-items: center;
+  align-items: center;
   margin-right: 247px;
 }
-.foto-logo{
+
+.foto-logo {
   justify-content: flex-start;
   /* border: 1px solid black; */
 }
+
 .nome-logo {
   /* border: 1px solid green; */
-  margin-left:6px;
-  font-size:16px ;
+  margin-left: 6px;
+  font-size: 16px;
   font-weight: bold;
 }
+
 .menu {
   display: flex;
   font-size: 16px;
-	justify-content: space-between;
-	text-align: center;
-	/* border: 1px solid rgb(0, 255, 55); */
-	width: 385px;
-	height: 19px;
+  justify-content: space-between;
+  text-align: center;
+  /* border: 1px solid rgb(0, 255, 55); */
+  width: 385px;
+  height: 19px;
   margin-right: 247px;
 }
+
 .menu a, .login a {
-  color: black;
-} 
+  color: rgba(0, 0, 0, 0.7);
+}
 
 .bloco-login {
   /* border: 1px solid purple; */
   display: flex;
-	align-items: center;
-	justify-content: center;
+  align-items: center;
+  justify-content: center;
   width: 257px;
   height: 42px;
   justify-content: flex-start;
 }
+
 .login {
   margin-right: 41px;
   /* border: 1px solid forestgreen; */
@@ -121,6 +152,7 @@ a{
   height: 19px;
   margin-right: 41px;
 }
+
 .btn-menu {
   display: flex;
   justify-content: center;
@@ -149,17 +181,21 @@ a{
   margin-bottom: 11.2;
   /* border: 1px solid red; */
   width: 493px;
-  height: 418,6px;
+  height: 418, 6px;
 }
+
 .texto-titulo-esquerdo {
-  
+
   /* border: 1px solid purple; */
   width: 493px;
   height: 147px;
   color: #131313;
   font-size: 40px;
-  font-weight: bolder; 
+  font-weight: 600;
+  font-family: 'ClashDisplay';
+  line-height: 49px;
 }
+
 .texto-baixo-titulo {
   margin-top: 20px;
   font-size: 18px;
@@ -167,6 +203,9 @@ a{
   /* border: 1px solid green; */
   width: 450px;
   height: 64px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400px;
+  line-height: 32px;
 }
 
 .btn-texto {
@@ -186,50 +225,234 @@ a{
   background-color: blue;
 
 }
+
 .bloco-rating {
   display: flex;
   align-items: center;
   margin-top: 49px;
   /* border: 1px solid purple; */
-  width: 342,21px;
-  height: 64,6px;
+  width: 342, 21px;
+  height: 64, 6px;
 }
+
 .rating-image {
+  display: flex;
   margin-right: 33px;
   /* border: 1px solid green; */
   width: 95px;
-  height: 45px;  
+  height: 45px;
 }
+
+.imagemSobreposta {
+  margin-left: -19px;
+}
+
 .meio-rating {
-  
+
   margin-right: 33px;
   font-size: 16px;
   text-align: left;
   /* border:1px solid red; */
-  width: 133,1px;
-  height: 64,6px;
+  width: 133, 1px;
+  height: 64, 6px;
 
 }
+
 .direita-rating {
-  
+
   font-size: 16px;
   text-align: left;
   /* border: 1px solid blue; */
-  width: 48,1px;
-  height: 64,31px;
+  width: 48, 1px;
+  height: 64, 31px;
 
 }
 
 .pontos {
-  
+
   /* border: 1px solid red; */
   width: 49px;
   height: 32px;
 }
 
 .lado-direito {
-  margin-right:36.5px;
+  margin-right: 36.5px;
   /* border: 1px solid green; */
   width: 445px;
   height: 489px;
+}
+
+
+/* Segunda parte dos codigos */
+
+.bloco-features {
+  margin-top: 49px;
+  margin-left: 152px;
+  margin right: 139px;
+  width: 1150px;
+  height: 202px;
+  /* border: 1px solid red; */
+}
+
+.bloco-titulo {
+  display: flex;
+  /* border: 1px solid green; */
+}
+
+.titulo-features {
+  /* border: 1px solid red; */
+  width: 485px;
+  height: 37px;
+  margin-left: 332px;
+  color: #131313;
+  font-size: 30px;
+  font-family: 'ClashDisplay';
+  font-weight: 600;
+  text-align: center;
+  
+
+}
+
+.bloco-colunas {
+  display: flex;
+  margin-top: 30px;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid blue; */
+  width: 1150px;
+  height: 135px;
+
+}
+
+.bloco-caixa-video {
+  position: relative;
+  /* border: 1px solid rgb(200, 241, 16); */
+  width: 355px;
+  height: 130px;
+
+}
+
+.bloco-video-icon {
+  width: 42px;
+  height: 42px;
+ 
+}
+
+.icon-titulo {
+  display: flex;
+  width: 225px;
+  height: 42px;
+  align-items: center;
+  justify-content: flex-start;
+  /* border: 1px solid red; */
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24,2px;
+}
+
+.paragrafo-features {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 32px;
+  text-align: left;
+  width: 319.42px;
+  height: 64px;
+  font-weight: 400;
+  /* border: 1px solid blue; */
+}
+
+.bloco-abaixo-features {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 1px solid black; */
+  width: 1440px;
+  height: 416px;
+  margin-top: 56px;
+}
+
+.fotofone {
+  /* border: 1px solid red; */
+  width: 489px;
+  height: 339px;
+
+
+}
+
+.caixa-direita-foto {
+
+  /* border: 1px solid red; */
+  width: 451px;
+  height: 333px;
+  gap: 20px;
+}
+
+.titulo-texto-direita {
+  font-family: 'ClashDisplay';
+  font-size: 40px;
+  text-align: left;
+  font-weight: 600;
+  color: #131313;
+}
+
+.paragrafo-direita {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: left;
+  font-weight: 400;
+  color: #12141D;
+}
+
+/* bloco abaixo foto fone */
+
+.bloco-abaixo-foto-fone {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  /* border: 1px solid green; */
+  width: 1440px;
+  height: 470px;
+}
+
+.bloco-texto-esquerdo{
+  /* border: 1px solid purple; */
+  width: 450px;
+  height: 245.47px;
+  
+}
+.bloco-texto-esquerdo h1 {
+  font-size: 40px;
+  text-align: left;
+  font-weight: 900;
+  color: #131313;
+}
+.bloco-texto-esquerdo p {
+  margin-top: 20px;
+  font-size: 18px;
+  line-height: 32px;
+  text-align: left;
+  color: #12141D;
+  font-weight: 400;
+}
+
+.bloco-texto-esquerdo button {
+  width: 173px;
+  height: 42px;
+  margin-top: 20px;
+  font-size: 16px;
+  border: none;
+  color: white;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: blue;
+
+
+}
+.batepapoimg {
+  width: 453px;
+  height: 419px;
+  /* border: 1px solid purple; */
+
 }
